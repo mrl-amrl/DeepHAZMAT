@@ -17,10 +17,12 @@ Accurate Hazmat detection and real-time processing are the two most important fa
 If you find this project useful in your research, please consider citing:
 
 ```
-@misc{2007.06392,
- Author = {Amir Sharifi and Ahmadreza Zibaei and Mahdi Rezaei},
- Title = {DeepHAZMAT: Hazardous Materials Sign Detection and Segmentation with Restricted Computational Resources},
- Year = {2020},
- Eprint = {arXiv:2007.06392},
+@misc{deephazmat,
+ author = {Amir Sharifi and Ahmadreza Zibaei and Mahdi Rezaei},
+ title = {DeepHAZMAT: Hazardous Materials Sign Detection and Segmentation with Restricted Computational Resources},
+ year = {2020},
+ eprint = {2007.06392},
+ archivePrefix={arXiv},
+ primaryClass={cs.CV}
 }
 ```
