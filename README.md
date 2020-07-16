@@ -1,8 +1,7 @@
-# DeepHAZMAT
----
+## DeepHAZMAT
 > [Read the Paper](https://arxiv.org/abs/2007.06392)
 
-## Abstract
+### Abstract
 
 Hazardous Materials Sign Detection and Segmentation with Restricted Computational Resources
 
@@ -13,9 +12,7 @@ Accurate Hazmat detection and real-time processing are the two most important fa
 - Hazmat sign segmentation and separation from the background using GrabCut technique
 - Post-processing the result with morphological operators and convex hull algorithm. 
 
-In spite of the utilisation of a very limited memory and CPU resources, the experimental results show the proposed method has successfully maintained a better performance in terms of detection-speed and detection-accuracy, compared with the state-of-the-art methods.
-
-## Citation
+### Citation
 
 If you find this project useful in your research, please consider citing:
 
