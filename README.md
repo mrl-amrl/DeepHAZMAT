@@ -12,6 +12,16 @@ Accurate Hazmat detection and real-time processing are the two most important fa
 - Hazmat sign segmentation and separation from the background using GrabCut technique
 - Post-processing the result with morphological operators and convex hull algorithm. 
 
+
+<img src="https://github.com/mrl-amrl/DeepHAZMAT/blob/master/resources/banner.png?raw=true" width="100%"/>
+
+### Tests
+
+```
+$ sudo pip install nose
+$ python -m nose -v --nocapture
+```
+
 ### Citation
 
 If you find this project useful in your research, please consider citing:
@@ -26,3 +36,5 @@ If you find this project useful in your research, please consider citing:
  primaryClass={cs.CV}
 }
 ```
+
+[![Made in AMRL](https://img.shields.io/badge/Made%20in-Advanced%20Mobile%Robotics%20Laboratory-red.svg)](https://mrl-amrl.ir/)
