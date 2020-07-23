@@ -37,4 +37,4 @@ If you find this project useful in your research, please consider citing:
 }
 ```
 
-[![Made in AMRL](https://img.shields.io/badge/Made%20in-Advanced%20Mobile%Robotics%20Laboratory-red.svg)](https://mrl-amrl.ir/)
+Made in Advanced Mobile Robotics Laboratory
