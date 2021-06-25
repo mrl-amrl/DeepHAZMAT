@@ -17,6 +17,7 @@ Accurate Hazmat detection and real-time processing are the two most important fa
 
 ### Manual
 
+You can try it in Google Colab environment. [Click here to see notebook](https://colab.research.google.com/drive/1FW0V4T46PWydceRUyy3boxHMu5pbHsUq?usp=sharing)
 You have to run this script with python > 3
 
 #### Pre Installation
