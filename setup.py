@@ -10,7 +10,7 @@ setup(
     license='MIT',
     packages=["deep_hazmat"],
     install_requires=[
-        'python-opencv',
+        'opencv-python==4.5.2.52',
         'imutils',
         'numpy'
     ],

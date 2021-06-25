@@ -1,31 +1,27 @@
 from os.path import join, dirname
 
-from .detector import YoloDetection
-from .feeding import ImageFeedingOptimisation
+from deep_hazmat.detector import YoloDetection
+from deep_hazmat.feeding import ImageFeedingOptimisation
 
 
 class DeepHAZMAT:
     NET_DIRECTORY = join(dirname(__file__), 'net')
 
-    def __init__(self, k, min_confidence=0.8):
+    def __init__(self, k, min_confidence=0.8, nms_threshold=0.3, segmentation_enabled=True):
         self._detector = YoloDetection(
             weights=join(self.NET_DIRECTORY, 'yolo.weights'),
             config=join(self.NET_DIRECTORY, 'yolo.cfg'),
             labels=join(self.NET_DIRECTORY, 'labels.names'),
             input_size=(576, 576),
             min_confidence=min_confidence,
-            nms_threshold=0.3,
+            nms_threshold=nms_threshold,
+            segmentation_enabled=segmentation_enabled,
         )
         self.optimizer = ImageFeedingOptimisation(
-            detector=self._detector,
             k=k,
+            function=self._detector.detect,
         )
 
     def update(self, image):
-        h, w = image.shape[:2]
-        for hazmat_object in self.optimizer.update(image):
-            hazmat_object.x /= w
-            hazmat_object.w /= w
-            hazmat_object.y /= h
-            hazmat_object.h /= h
-            yield hazmat_object
+        objects = self.optimizer.update(image)
+        return objects

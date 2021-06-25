@@ -15,6 +15,46 @@ Accurate Hazmat detection and real-time processing are the two most important fa
 
 <img src="https://github.com/mrl-amrl/DeepHAZMAT/blob/master/resources/banner.png?raw=true" width="100%"/>
 
+### Manual
+
+You have to run this script with python > 3
+
+#### Pre Installation
+
+```
+$ git clone https://github.com/mrl-amrl/DeepHAZMAT
+$ python -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt 
+```
+
+#### Examples
+
+- Sample video:
+```
+$ python sample.py -k 5 -video resources/videos/sample-0.mp4
+```
+
+- Disabling NMS:
+```
+$ python sample.py -k 3 -video resources/videos/sample-1.mp4 -nms_threshold 0
+```
+
+- Sample image:
+```
+$ python sample.py -images "resources/images/*"
+```
+
+- Changing minimum confidence:
+```
+$ python sample.py -images "resources/images/*" -min_confidence 0.5
+```
+
+- Disabling segmentation:
+```
+$ python sample.py -images "resources/images/*" -segmentation_enabled false
+```
+
 ### Tests
 
 ```

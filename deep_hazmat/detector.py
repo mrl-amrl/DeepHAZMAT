@@ -1,7 +1,10 @@
 import cv2
 import time
 import numpy as np
-from .common import Object
+
+from deep_hazmat.segmentation import Segmentation
+from deep_hazmat.common import Object
+from deep_hazmat.nms import non_max_suppression
 
 color_list = [
     (220, 120, 50),  # poison
@@ -21,7 +24,8 @@ color_list = [
 
 
 class YoloDetection:
-    def __init__(self, weights, config, labels, input_size=(416, 416), min_confidence=0.7, nms_threshold=0.3):
+    def __init__(self, weights, config, labels, input_size=(416, 416), min_confidence=0.7, nms_threshold=0.3,
+                 segmentation_enabled=True):
         np.random.seed(42)
 
         self._net = cv2.dnn.readNetFromDarknet(config, weights)
@@ -35,6 +39,8 @@ class YoloDetection:
         self.input_size = input_size
         self.min_confidence = min_confidence
         self.nms_threshold = nms_threshold
+
+        self.segmentation_enabled = segmentation_enabled
 
         self._detection_time = 0
 
@@ -64,8 +70,7 @@ class YoloDetection:
                     (centerX, centerY, width, height) = box.astype("int")
                     x = int(centerX - (width / 2))
                     y = int(centerY - (height / 2))
-                    boxes.append([x, y, x + int(width), y +
-                                  int(height), confidence, class_id])
+                    boxes.append([x, y, x + int(width), y + int(height), confidence, class_id])
 
         if not boxes:
             return []
@@ -81,18 +86,31 @@ class YoloDetection:
             confidences.append(float(box[4]))
             class_ids.append(box[5])
 
-        indexes = cv2.dnn.NMSBoxes(positions, confidences, self.min_confidence, self.nms_threshold)
-        objects = []
+        if self.nms_threshold > 0:
+            boxes = non_max_suppression(boxes, self.nms_threshold)
 
-        for i in indexes:
-            i = i[0]
-            x, y, w, h = positions[i]
-            class_id = class_ids[i]
+        objects = []
+        for box in boxes:
+            x, y, x2, y2 = [int(i) for i in box[:4]]
+            w = x2 - x
+            h = y2 - y
+            x /= W
+            w /= W
+            h /= H
+            y /= H
+            confidence = box[4]
+            class_id = int(box[5])
+            if self.segmentation_enabled:
+                segmentation = Segmentation(image, [x, y, w, h])
+                points = segmentation.find_object(padding=0.2)
+            else:
+                points = []
             objects.append(Object(
                 x, y, w, h,
-                confidence=confidences[i],
+                confidence=confidence,
                 name=self._labels[class_id],
-                color=[int(c) for c in self._colors[class_id]]
+                color=[int(c) for c in self._colors[class_id]],
+                points=points,
             ))
 
         self._detection_time = time.time() - start_time

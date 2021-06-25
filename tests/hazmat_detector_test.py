@@ -25,7 +25,7 @@ class DetectorTest(unittest.TestCase):
         )
 
     def test_hazmats(self):
-        for item in glob("resources/hazmats/*.jpg"):
+        for item in glob("resources/images/*.jpg"):
             item_name = basename(item).replace(".jpg", "")
             print("Working on {} ...".format(item_name))
             image = read_image(item)
