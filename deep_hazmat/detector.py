@@ -102,7 +102,7 @@ class YoloDetection:
             class_id = int(box[5])
             if self.segmentation_enabled:
                 segmentation = Segmentation(image, [x, y, w, h])
-                points = segmentation.find_object(padding=0.2)
+                points = segmentation.find_object(padding=0.1)
             else:
                 points = []
             objects.append(Object(
