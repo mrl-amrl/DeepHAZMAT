@@ -23,6 +23,7 @@ You have to run this script with python > 3
 
 ```
 $ git clone https://github.com/mrl-amrl/DeepHAZMAT
+$ cd DeepHAZMAT
 $ python -m venv venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt 

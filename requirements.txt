@@ -1,3 +1,2 @@
-imutils==0.5.4
-opencv-python==4.5.2.52
-numpy==1.17.3
+imutils
+opencv-python
