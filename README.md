@@ -1,5 +1,6 @@
 ## DeepHAZMAT
 > [Read the Paper](https://arxiv.org/abs/2007.06392)
+> [Dataset](https://drive.google.com/drive/folders/16hhlsYa0vbjmA1-nSmkOkiaUZmorY4fp)
 
 ### Abstract
 
@@ -15,10 +16,15 @@ Accurate Hazmat detection and real-time processing are the two most important fa
 
 <img src="https://github.com/mrl-amrl/DeepHAZMAT/blob/master/resources/banner.png?raw=true" width="100%"/>
 
-### Manual
+
+### Dataset
+
+We publicly release a standard Hazmat dataset with PASCAL-VOC format as a new comprehensive dataset to be used by other researchers in the field.
+We also release a simple and mini dataset with different-distance images. Click [here](https://drive.google.com/drive/folders/16hhlsYa0vbjmA1-nSmkOkiaUZmorY4fp) to see the dataset.
+
+### Google Colab Notebook
 
 You can try it in Google Colab environment. [Click here to see notebook](https://colab.research.google.com/drive/1FW0V4T46PWydceRUyy3boxHMu5pbHsUq?usp=sharing)
-You have to run this script with python > 3
 
 #### Installation
 
