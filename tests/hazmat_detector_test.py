@@ -1,6 +1,6 @@
 import unittest
-from os.path import basename, join
 from glob import glob
+from os.path import basename, join
 
 from deep_hazmat import YoloDetection, read_image
 
@@ -10,7 +10,7 @@ class DetectorTest(unittest.TestCase):
     Test methods in yolo detection
     """
 
-    net_directory = join('deep_hazmat', 'net')
+    net_directory = 'net'
 
     def __init__(self, *args, **kwargs):
         unittest.TestCase.__init__(self, *args, **kwargs)
@@ -30,7 +30,7 @@ class DetectorTest(unittest.TestCase):
             print("Working on {} ...".format(item_name))
             image = read_image(item)
             results = self.detector.detect(image)
-            self.assertEqual(len(results), 1)
+            self.assertGreaterEqual(len(results), 1)
 
             result = results[0]
             self.assertEqual(item_name, result.name)

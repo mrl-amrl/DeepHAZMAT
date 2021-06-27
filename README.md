@@ -20,17 +20,17 @@ Accurate Hazmat detection and real-time processing are the two most important fa
 You can try it in Google Colab environment. [Click here to see notebook](https://colab.research.google.com/drive/1FW0V4T46PWydceRUyy3boxHMu5pbHsUq?usp=sharing)
 You have to run this script with python > 3
 
-#### Pre Installation
+#### Installation
 
 ```
 $ git clone https://github.com/mrl-amrl/DeepHAZMAT
 $ cd DeepHAZMAT
-$ python -m venv venv
-$ source venv/bin/activate
-$ pip install -r requirements.txt 
+$ pip install .
 ```
 
 #### Examples
+
+All of these examples must be run in beside of 'net' directory. Otherwise `-net_dir` argument will be needed.
 
 - Sample video:
 ```

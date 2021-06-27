@@ -32,6 +32,7 @@ def main():
     parser.add_argument("-segmentation_enabled", type=strtobool, default=True)
     parser.add_argument("-video", type=str)
     parser.add_argument("-images", type=str)
+    parser.add_argument("-net_dir", type=str, default='net')
     args = parser.parse_args()
     is_video = bool(args.video) and not bool(args.images)
     if not is_video and args.k > 0:
@@ -40,6 +41,7 @@ def main():
 
     deep_hazmat = DeepHAZMAT(
         k=args.k,
+        net_directory=args.net_dir,
         min_confidence=args.min_confidence,
         nms_threshold=args.nms_threshold,
         segmentation_enabled=args.segmentation_enabled,

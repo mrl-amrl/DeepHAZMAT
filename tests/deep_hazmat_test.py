@@ -13,7 +13,7 @@ class DetectorTest(unittest.TestCase):
     def __init__(self, *args, **kwargs):
         unittest.TestCase.__init__(self, *args, **kwargs)
 
-        self.deep_hazmat = DeepHAZMAT(k=0)
+        self.deep_hazmat = DeepHAZMAT(k=0, net_directory='net')
 
     def test_hazmats(self):
         for item in glob("resources/images/*.jpg"):
