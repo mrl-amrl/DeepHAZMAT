@@ -84,6 +84,7 @@ issn = {2666-8270},
 doi = {https://doi.org/10.1016/j.mlwa.2021.100104},
 url = {https://www.sciencedirect.com/science/article/pii/S2666827021000529},
 author = {Amir Sharifi and Ahmadreza Zibaei and Mahdi Rezaei},
+}
 ```
 
 Made in Advanced Mobile Robotics Laboratory
