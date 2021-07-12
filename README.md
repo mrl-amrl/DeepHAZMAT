@@ -1,5 +1,5 @@
 ## DeepHAZMAT
-> [Read the Paper](https://arxiv.org/abs/2007.06392)
+> [Read the Paper](https://doi.org/10.1016/j.mlwa.2021.100104)
 > [Dataset](https://drive.google.com/drive/folders/16hhlsYa0vbjmA1-nSmkOkiaUZmorY4fp)
 
 ### Abstract
@@ -75,14 +75,15 @@ $ python -m nose -v --nocapture
 If you find this project useful in your research, please consider citing:
 
 ```
-@misc{deephazmat,
- author = {Amir Sharifi and Ahmadreza Zibaei and Mahdi Rezaei},
- title = {DeepHAZMAT: Hazardous Materials Sign Detection and Segmentation with Restricted Computational Resources},
- year = {2020},
- eprint = {2007.06392},
- archivePrefix={arXiv},
- primaryClass={cs.CV}
-}
+@article{DeepHAZMAT,
+title = {A deep learning based hazardous materials (HAZMAT) sign detection robot with restricted computational resources},
+journal = {Machine Learning with Applications},
+pages = {100104},
+year = {2021},
+issn = {2666-8270},
+doi = {https://doi.org/10.1016/j.mlwa.2021.100104},
+url = {https://www.sciencedirect.com/science/article/pii/S2666827021000529},
+author = {Amir Sharifi and Ahmadreza Zibaei and Mahdi Rezaei},
 ```
 
 Made in Advanced Mobile Robotics Laboratory
