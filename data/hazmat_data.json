@@ -1,0 +1,226 @@
+{
+    "oxygen": {
+      "description": "A colorless, odorless gas essential for combustion and respiration.",
+      "explosiveness": "High (supports combustion, not explosive itself)",
+      "intensity": "Moderate (increases fire intensity)",
+      "reaction_to_elements": "Reacts with flammable materials to accelerate burning; non-reactive with inert gases.",
+      "storage": "Store in well-ventilated areas away from flammable substances in high-pressure cylinders.",
+      "waste_disposal": "Release safely into the atmosphere in controlled amounts; no special disposal needed."
+    },
+    "hydrogen": {
+      "description": "A highly flammable, lightweight gas.",
+      "explosiveness": "Very High (forms explosive mixtures with air)",
+      "intensity": "High (rapid combustion)",
+      "reaction_to_elements": "Reacts explosively with oxygen; stable with noble gases.",
+      "storage": "Store in cool, ventilated areas in sealed containers away from oxidizers.",
+      "waste_disposal": "Vent carefully in a controlled environment to avoid ignition."
+    },
+    "chlorine": {
+      "description": "A toxic, greenish-yellow gas with a pungent odor.",
+      "explosiveness": "Low (not explosive but highly reactive)",
+      "intensity": "High (toxic and corrosive)",
+      "reaction_to_elements": "Reacts with water to form acids; reacts with metals to form salts.",
+      "storage": "Store in corrosion-resistant containers in cool, dry areas.",
+      "waste_disposal": "Neutralize with a base and dispose of as hazardous waste per regulations."
+    },
+    "nitrogen": {
+      "description": "A colorless, inert gas that makes up 78% of Earth's atmosphere.",
+      "explosiveness": "None (inert)",
+      "intensity": "Low (non-reactive under normal conditions)",
+      "reaction_to_elements": "Stable; does not react with most elements except under extreme conditions.",
+      "storage": "Store in pressurized cylinders in well-ventilated areas.",
+      "waste_disposal": "Release into the atmosphere; no special precautions needed."
+    },
+    "carbon_dioxide": {
+      "description": "A colorless gas produced by respiration and combustion.",
+      "explosiveness": "None (non-flammable)",
+      "intensity": "Low (can displace oxygen in confined spaces)",
+      "reaction_to_elements": "Reacts with water to form carbonic acid; stable with most elements.",
+      "storage": "Store in high-pressure cylinders in cool, ventilated areas.",
+      "waste_disposal": "Vent to atmosphere in controlled amounts."
+    },
+    "ammonia": {
+      "description": "A pungent, colorless gas used in fertilizers and refrigerants.",
+      "explosiveness": "Moderate (flammable in high concentrations)",
+      "intensity": "High (toxic and corrosive)",
+      "reaction_to_elements": "Reacts with acids to form salts; reacts with chlorine to form explosive compounds.",
+      "storage": "Store in pressure vessels away from heat and oxidizers.",
+      "waste_disposal": "Neutralize with acid and treat as hazardous waste."
+    },
+    "methane": {
+      "description": "A flammable, odorless gas and primary component of natural gas.",
+      "explosiveness": "High (explosive in air mixtures)",
+      "intensity": "High (rapid combustion)",
+      "reaction_to_elements": "Reacts with oxygen to burn; stable with inert gases.",
+      "storage": "Store in pressurized containers in cool, ventilated areas.",
+      "waste_disposal": "Burn off in a controlled flare or vent cautiously."
+    },
+    "sulfur_dioxide": {
+      "description": "A toxic gas with a sharp, choking odor.",
+      "explosiveness": "None (non-flammable)",
+      "intensity": "High (toxic and irritant)",
+      "reaction_to_elements": "Reacts with water to form sulfuric acid; reacts with metals to form sulfites.",
+      "storage": "Store in sealed containers in cool, dry areas.",
+      "waste_disposal": "Neutralize with alkali and dispose of as hazardous waste."
+    },
+    "hydrochloric_acid": {
+      "description": "A strong, corrosive liquid acid.",
+      "explosiveness": "None (non-explosive)",
+      "intensity": "High (corrosive and toxic fumes)",
+      "reaction_to_elements": "Reacts with bases to neutralize; reacts with metals to produce hydrogen gas.",
+      "storage": "Store in corrosion-resistant containers in ventilated areas.",
+      "waste_disposal": "Neutralize with a base and dispose of per regulations."
+    },
+    "gasoline": {
+      "description": "A flammable liquid mixture of hydrocarbons used as fuel.",
+      "explosiveness": "Very High (vapors ignite easily)",
+      "intensity": "High (rapid burning)",
+      "reaction_to_elements": "Reacts with oxygen to combust; stable with inert materials.",
+      "storage": "Store in approved flammable liquid containers away from ignition sources.",
+      "waste_disposal": "Dispose of as hazardous waste at a licensed facility."
+    },
+    "propane": {
+      "description": "A flammable hydrocarbon gas used as fuel.",
+      "explosiveness": "High (explosive in air mixtures)",
+      "intensity": "High (rapid combustion)",
+      "reaction_to_elements": "Reacts with oxygen to burn; stable with non-oxidizers.",
+      "storage": "Store in pressurized cylinders in cool, ventilated areas.",
+      "waste_disposal": "Burn off in a controlled environment or vent safely."
+    },
+    "acetone": {
+      "description": "A flammable, volatile liquid solvent.",
+      "explosiveness": "High (vapors can ignite)",
+      "intensity": "Moderate (fast evaporation and burning)",
+      "reaction_to_elements": "Reacts with oxidizers to combust; stable with inert materials.",
+      "storage": "Store in tightly sealed containers in cool, ventilated areas.",
+      "waste_disposal": "Dispose of as hazardous waste; avoid open flames."
+    },
+    "benzene": {
+      "description": "A flammable, aromatic liquid and known carcinogen.",
+      "explosiveness": "High (vapors form explosive mixtures)",
+      "intensity": "High (toxic and flammable)",
+      "reaction_to_elements": "Reacts with oxygen to burn; reacts with halogens under catalysis.",
+      "storage": "Store in sealed containers in well-ventilated, flame-proof areas.",
+      "waste_disposal": "Dispose of as hazardous waste per strict regulations."
+    },
+    "ethanol": {
+      "description": "A flammable alcohol used in fuels and disinfectants.",
+      "explosiveness": "Moderate (vapors can ignite)",
+      "intensity": "Moderate (burns steadily)",
+      "reaction_to_elements": "Reacts with oxygen to combust; reacts with acids to form esters.",
+      "storage": "Store in cool, ventilated areas away from ignition sources.",
+      "waste_disposal": "Dilute and dispose of as flammable waste."
+    },
+    "sodium_hydroxide": {
+      "description": "A caustic solid base used in cleaning and manufacturing.",
+      "explosiveness": "None (non-explosive)",
+      "intensity": "High (corrosive)",
+      "reaction_to_elements": "Reacts with acids to neutralize; reacts with metals to produce hydrogen.",
+      "storage": "Store in dry, sealed containers away from acids.",
+      "waste_disposal": "Neutralize with acid and dispose of per regulations."
+    },
+    "nitric_acid": {
+      "description": "A strong, corrosive liquid acid and oxidizer.",
+      "explosiveness": "Moderate (can form explosive mixtures with organics)",
+      "intensity": "High (corrosive and toxic fumes)",
+      "reaction_to_elements": "Reacts with metals to produce nitrogen oxides; reacts with bases to neutralize.",
+      "storage": "Store in corrosion-resistant containers away from organics.",
+      "waste_disposal": "Neutralize with a base and dispose of as hazardous waste."
+    },
+    "helium": {
+      "description": "A lightweight, inert gas used in balloons and cooling.",
+      "explosiveness": "None (inert)",
+      "intensity": "Low (non-reactive)",
+      "reaction_to_elements": "Does not react with any elements under normal conditions.",
+      "storage": "Store in high-pressure cylinders in ventilated areas.",
+      "waste_disposal": "Release safely into the atmosphere."
+    },
+    "phosphoric_acid": {
+      "description": "A non-toxic, corrosive liquid acid used in fertilizers.",
+      "explosiveness": "None (non-explosive)",
+      "intensity": "Moderate (corrosive)",
+      "reaction_to_elements": "Reacts with bases to form phosphates; reacts with metals to release hydrogen.",
+      "storage": "Store in corrosion-resistant containers in cool areas.",
+      "waste_disposal": "Neutralize and dispose of per local regulations."
+    },
+    "toluene": {
+      "description": "A flammable, aromatic liquid solvent.",
+      "explosiveness": "High (vapors ignite easily)",
+      "intensity": "High (toxic and flammable)",
+      "reaction_to_elements": "Reacts with oxygen to burn; reacts with strong oxidizers violently.",
+      "storage": "Store in sealed containers in cool, flame-proof areas.",
+      "waste_disposal": "Dispose of as hazardous waste at a licensed facility."
+    },
+    "formaldehyde": {
+      "description": "A flammable, toxic gas or liquid used as a preservative.",
+      "explosiveness": "Moderate (vapors can ignite)",
+      "intensity": "High (toxic and irritant)",
+      "reaction_to_elements": "Reacts with oxygen to burn; reacts with bases to form resins.",
+      "storage": "Store in sealed containers in cool, ventilated areas.",
+      "waste_disposal": "Dispose of as hazardous waste per strict regulations."
+    },
+    "dangerous": {
+      "description": "A general classification for materials posing significant risk to health, safety, or property.",
+      "explosiveness": "Varies (depends on specific substance)",
+      "intensity": "High (due to inherent danger)",
+      "reaction_to_elements": "Varies; may react with air, water, or other chemicals unpredictably.",
+      "storage": "Store according to specific hazard class in secure, labeled containers.",
+      "waste_disposal": "Dispose of per local regulations based on specific material properties."
+    },
+    "flammable": {
+      "description": "Materials that ignite easily and burn rapidly, including gases, liquids, and solids.",
+      "explosiveness": "High (vapors or dust can form explosive mixtures)",
+      "intensity": "High (rapid combustion)",
+      "reaction_to_elements": "Reacts with oxygen to burn; may react with oxidizers violently.",
+      "storage": "Store in cool, ventilated areas away from ignition sources in approved containers.",
+      "waste_disposal": "Dispose of as hazardous waste; avoid ignition during handling."
+    },
+    "inhalation_hazard": {
+      "description": "Substances that pose a risk when inhaled, often toxic or irritant gases or vapors.",
+      "explosiveness": "Low to Moderate (depends on substance)",
+      "intensity": "High (toxic or corrosive to respiratory system)",
+      "reaction_to_elements": "May react with moisture in air or lungs to form harmful compounds.",
+      "storage": "Store in sealed, ventilated containers away from populated areas.",
+      "waste_disposal": "Neutralize if possible and dispose of as hazardous waste per regulations."
+    },
+    "oxidizer": {
+      "description": "Materials that can cause or enhance combustion by providing oxygen.",
+      "explosiveness": "High (supports combustion, may cause explosions with flammables)",
+      "intensity": "High (increases fire intensity)",
+      "reaction_to_elements": "Reacts with flammable or combustible materials to ignite or intensify fires.",
+      "storage": "Store in cool, dry areas away from flammable or organic materials.",
+      "waste_disposal": "Neutralize and dispose of as hazardous waste per regulations."
+    },
+    "flammable-solid": {
+      "description": "Solid materials that ignite easily and burn vigorously, often through friction or heat.",
+      "explosiveness": "Moderate to High (dust or particles may explode)",
+      "intensity": "High (rapid burning)",
+      "reaction_to_elements": "Reacts with oxygen to combust; may react with water or acids.",
+      "storage": "Store in cool, dry areas away from ignition sources and moisture.",
+      "waste_disposal": "Dispose of as hazardous waste; avoid sparks or open flames."
+    },
+    "non-flammable-gas": {
+      "description": "Gases that do not burn, often inert or used to displace oxygen.",
+      "explosiveness": "None (non-flammable)",
+      "intensity": "Low (may pose asphyxiation risk)",
+      "reaction_to_elements": "Stable; does not react with most elements under normal conditions.",
+      "storage": "Store in high-pressure cylinders in well-ventilated areas.",
+      "waste_disposal": "Vent safely to atmosphere if non-toxic; otherwise follow regulations."
+    },
+    "explosive": {
+      "description": "Materials capable of sudden, violent energy release, often in solid or liquid form.",
+      "explosiveness": "Very High (detonates under specific conditions)",
+      "intensity": "Very High (destructive force)",
+      "reaction_to_elements": "Reacts violently with heat, shock, or certain chemicals.",
+      "storage": "Store in secure, isolated areas away from heat, shock, and incompatible materials.",
+      "waste_disposal": "Handle with extreme care; dispose of via specialized hazardous waste services."
+    },
+    "infectious-substance": {
+      "description": "Biological materials that can cause disease in humans or animals.",
+      "explosiveness": "None (non-explosive)",
+      "intensity": "High (biohazard risk)",
+      "reaction_to_elements": "Stable chemically; biologically active with living organisms.",
+      "storage": "Store in sealed, biohazard-labeled containers in controlled environments.",
+      "waste_disposal": "Autoclave or incinerate per biohazard regulations; dispose of as medical waste."
+    }
+  }
